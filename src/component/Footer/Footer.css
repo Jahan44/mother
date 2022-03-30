@@ -1,0 +1,35 @@
+.footer-body {
+  width: 100%;
+  height: auto;
+  background-color: #1d3557;
+  padding: 15px;
+}
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-nav ul li {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+.footer-nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.4s linear ease-in-out;
+}
+.footer-nav ul li a:hover {
+  transform: scale(2.5);
+  text-decoration: none;
+  background-color: blanchedalmond;
+  color: #1d3557;
+}
+.footer-img {
+  width: 90%;
+  height: 200px;
+}
+.footer-img img {
+  width: 100%;
+  height: 200px;
+}

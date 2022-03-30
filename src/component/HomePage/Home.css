@@ -1,0 +1,123 @@
+/* home css */
+.home-body {
+  background-color: antiquewhite;
+}
+.home-header {
+  width: 100%;
+}
+.home-title {
+  width: 100%;
+  height: auto;
+}
+.my-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  background-image: url("./image/background.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  border-radius: 10px;
+}
+.my-img-div {
+  width: 100%;
+  height: 100%;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  border-radius: 10px;
+
+  transition: all 0.4s ease;
+  animation: mymove 5s infinite linear;
+}
+
+.text-write-body-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.text-write-body-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.type-writer-text {
+  position: absolute;
+
+  left: 10px;
+}
+.type-writer-text span {
+  color: red;
+  text-shadow: 2px 4px 6px rgb(236, 139, 139);
+}
+.img-file {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  background-image: url("./image/joysen.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* image animation function */
+@keyframes mymove {
+  10% {
+    transform: scale(0.001);
+    /* background-image: url("./image/myImg.png"); */
+  }
+  20% {
+    transform: scale(0.001);
+    background-image: url("./image/myImg.png");
+  }
+  40% {
+    transform: scale(1);
+    background-image: url("./image/myImg.png");
+  }
+  50% {
+    background-image: url("./image/myImg.png");
+  }
+  60% {
+    transform: scale(0.001);
+    background-image: url("./image/myImg.png");
+  }
+  70% {
+    transform: scale(0.001);
+    background-image: url("./image/bristi.png");
+  }
+  80% {
+    transform: scale(1);
+    background-image: url("./image/bristi.png");
+  }
+  90% {
+    background-image: url("./image/bristi.png");
+  }
+  100% {
+    transform: scale(0.001);
+    background-image: url("./image/bristi.png");
+  }
+}
+
+@media only screen and(max-width:991) {
+  .display-flex {
+    display: flex;
+  }
+  .item-1 {
+    order: 2;
+    -ms-flex-order: 2;
+  }
+  .item-2 {
+    order: 1;
+    -ms-flex-order: 1;
+  }
+}
